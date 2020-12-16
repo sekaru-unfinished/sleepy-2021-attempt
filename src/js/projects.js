@@ -85,7 +85,7 @@ export default [
     platforms: "Windows",
     desc: "A top-down shooter where you're given the ability to possess and control your enemies",
     poster: require("../images/games/superstatic.png"),
-    video: require("../videos/superstatic.webm"),
+    video: require("../videos/superstatic.mp4"),
     external: "http://sleepystudios.net/superstatic",
     class: "col2"
   },
@@ -206,7 +206,7 @@ export default [
     desc: "A sandbox game with a focus on realistic survival: Live off the wilderness, hunt animals, manage your body's health and craft new tools and armour in order to survive",
     longDesc: "The game features dynamic environments (through the seasons system) as well as many underlying stats (including blood content, body temperature and combat skills) that you need to manage and control throughout your time in the wilderness",
     poster: require("../images/games/crawle.png"),
-    video: require("../videos/crawle.webm"),
+    video: require("../videos/crawle.mp4"),
     external: "http://sleepystudios.net/crawle/",
     class: "col2"
   }
