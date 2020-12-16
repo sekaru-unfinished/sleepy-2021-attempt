@@ -1,0 +1,23 @@
+{
+  "name": "sleepy2021",
+  "version": "1.0.0",
+  "author": "Sleepy Studios",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-css": "^2.0.0-alpha.3",
+    "@parcel/transformer-postcss": "^2.0.0-alpha.3",
+    "parcel": "next",
+    "sass": "^1.30.0"
+  },
+  "scripts": {
+    "start": "parcel serve src/index.html --no-cache --open",
+    "prebuild": "rm -rf -f dist",
+    "build": "parcel build src/index.html --public-url /2021"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "tabler-icons": "^1.35.0"
+  }
+}

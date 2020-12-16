@@ -1,0 +1,70 @@
+#games-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 8px;
+  grid-auto-rows: 250px;
+  margin-top: 32px;
+  animation-name: fadeInUpBig;
+  animation-duration: 0.5s;
+
+  @include medium-screens-up {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include large-screens-up {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .game {
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+    border-radius: 4px;
+    background: $grey-blue;
+    border: 1px solid $grey-blue;
+    transition: 0.2s all;
+
+    &:hover {
+      .game__content {
+        transform: translateY(-40%);
+      }
+      border: 2px solid $light-blue;
+    }
+
+    &--col2 {
+      @include large-screens-up {
+        grid-column: span 2;
+      }
+    }
+
+    &--col1 {
+      grid-column: span 1;
+    }
+  
+    .game__content {
+      transition: transform 0.3s ease-in-out;
+
+      img, video {
+        object-fit: cover;
+        height: 250px;
+      }
+  
+      .caption {
+        text-align: center;
+        padding: 20px 12px;
+
+        .title {
+          font-weight: bold;
+          font-size: 1.2rem;
+          margin-bottom: 8px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+
+        .desc {
+          color: $white;
+        }
+      }
+    }
+  }
+}

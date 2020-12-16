@@ -1,0 +1,35 @@
+$bp-md: 600px;
+$bp-lg: 1200px;
+
+@mixin small-screens {
+  @media (min-width: 1px) and (max-width: #{$bp-md} - 1) {
+    @content;
+  }
+}
+
+@mixin medium-screens {
+  @media (min-width: #{$bp-md}) and (max-width: #{$bp-lg - 1}) {
+    @content;
+  }
+}
+
+@mixin medium-screens-up {
+  @media (min-width: #{$bp-md}) {
+    @content;
+  }
+}
+
+@mixin large-screens-up {
+  @media (min-width: #{$bp-lg}) {
+    @content;
+  }
+}
+
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

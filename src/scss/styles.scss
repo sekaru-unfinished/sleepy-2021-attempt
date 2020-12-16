@@ -1,0 +1,65 @@
+@import '../../node_modules/animate.css/animate.min.css';
+@import 'reset';
+@import 'colours';
+@import 'sizing';
+
+@import 'fonts';
+@import 'games';
+@import 'nav';
+
+@mixin focus-style {
+  box-shadow: 0 0 0 3px $light-blue;
+  outline: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: $midnight-blue;
+  color: #fff;
+}
+
+#logo {
+  &:hover {
+    animation-name: tada;
+    animation-duration: 1s;
+  }
+}
+
+#credit {
+  margin: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: fadeInUpBig;
+  animation-duration: 0.5s;
+
+  a {
+    display: block;
+
+    img {
+      &:hover {
+        animation-name: headShake;
+        animation-duration: 1s;
+      }
+    }
+  }
+
+  p {
+    letter-spacing: 2px;
+    font-size: 0.6rem;
+  }
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  transition: 0.2s all;
+
+  &:focus {
+    @include focus-style;
+  }
+
+  &:hover {
+    color: $light-blue;
+  }
+}
