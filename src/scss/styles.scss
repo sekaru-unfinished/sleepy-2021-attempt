@@ -28,8 +28,8 @@ body {
   height: auto;
 
   &:hover {
-    animation-name: tada;
-    animation-duration: 1s;
+    animation-name: pulse;
+    animation-duration: 0.75s;
   }
 }
 
