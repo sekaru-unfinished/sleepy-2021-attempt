@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import projects from './projects'
 
 const Games = () => {
-  const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
+  const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
   const reducedMotion = !mediaQuery || mediaQuery.matches
 
   return (

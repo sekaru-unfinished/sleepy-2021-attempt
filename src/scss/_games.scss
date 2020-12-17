@@ -30,6 +30,7 @@
 
     &:hover {
       box-shadow: 0 0 0 2px $light-blue;
+
       .game__content {
         transform: translateY(-30%);
       }
