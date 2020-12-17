@@ -18,7 +18,7 @@ const Games = () => {
             }
 
             {(!project.video || reducedMotion) &&
-              <img src={project.poster} alt='' />
+              <img width="767" height="250" src={project.poster} alt='' />
             }
 
             <div className='caption'>
