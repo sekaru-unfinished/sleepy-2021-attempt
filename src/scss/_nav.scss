@@ -2,12 +2,11 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 32px;
+  margin: 32px 32px 0;
 
   @include medium-screens-up {
     flex-direction: row;
     justify-content: space-between;
-    margin: 32px 32px 16px;
   }
 
   ul {
@@ -30,7 +29,7 @@ nav {
 
         & > a {
           font-weight: bold;
-          padding: 8px 24px;
+          padding: 12px 28px;
           border-radius: 4px;
           border: 2px solid $white;
           text-transform: uppercase;
@@ -49,6 +48,8 @@ nav {
       }
 
       &.icon-link {
+        vertical-align: middle;
+        
         &:hover {
           animation-name: rubberBand;
         }

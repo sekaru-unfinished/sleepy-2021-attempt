@@ -3,9 +3,10 @@
   grid-template-columns: 1fr;
   grid-gap: 8px;
   grid-auto-rows: 250px;
-  margin-top: 8px;
+  margin-top: 20px;
   animation-name: fadeInUpBig;
   animation-duration: 0.5s;
+  animation-delay: 0s;
 
   @include medium-screens-up {
     grid-template-columns: repeat(2, 1fr);
@@ -26,7 +27,7 @@
     &:hover {
       box-shadow: 0 0 0 2px $light-blue;
       .game__content {
-        transform: translateY(-40%);
+        transform: translateY(-30%);
       }
     }
 
@@ -52,18 +53,20 @@
   
       .caption {
         text-align: center;
-        padding: 20px 12px;
+        padding: 16px 12px;
+        height: 250px;
 
         .title {
           font-weight: bold;
           font-size: 1.2rem;
-          margin-bottom: 8px;
+          margin-bottom: 4px;
           text-transform: uppercase;
           letter-spacing: 1px;
         }
 
         .desc {
           color: $white;
+          font-size: 1rem;
         }
       }
     }

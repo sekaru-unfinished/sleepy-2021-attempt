@@ -73,7 +73,7 @@ export default [
     name: "Heart Heist",
     published: "December 2016",
     platforms: "Windows, Mac, Linux",
-    desc: "A randomly-generated stealth game where you control a shadow who can blend into the environment",
+    desc: "A randomly-generated stealth game where you can blend into the environment",
     longDesc: "Avoid drones and lasers to find your heart in this randomly-generated bank vault. Made for Ludum Dare 37 where the theme was 'One Room'",
     download: "https://sleepystudios.itch.io/heart-heist",
     poster: require("../images/games/heartheist.png"),

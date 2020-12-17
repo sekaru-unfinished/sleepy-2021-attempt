@@ -12,6 +12,10 @@
   outline: none;
 }
 
+html {
+  background-color: $midnight-blue;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   background-color: $midnight-blue;
@@ -19,7 +23,9 @@ body {
 }
 
 #logo {
+  margin-top: 32px;
   width: 400px;
+  height: auto;
 
   &:hover {
     animation-name: tada;
@@ -33,7 +39,8 @@ body {
   flex-direction: column;
   align-items: center;
   animation-name: fadeInUpBig;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
+  animation-delay: 0s;
 
   a {
     display: block;
