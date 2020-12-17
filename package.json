@@ -12,7 +12,8 @@
   "scripts": {
     "start": "parcel serve src/index.html --no-cache --open",
     "prebuild": "rm -rf -f dist",
-    "build": "parcel build src/index.html --public-url /2021"
+    "build": "parcel build src/index.html --public-url /2021",
+    "postbuild": "cp src/robots.txt dist/robots.txt"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
