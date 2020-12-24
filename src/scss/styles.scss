@@ -6,6 +6,7 @@
 @import 'fonts';
 @import 'games';
 @import 'nav';
+@import 'text-page';
 
 @mixin focus-style {
   box-shadow: 0 0 0 3px $light-blue;
@@ -68,6 +69,7 @@ a {
   color: $white;
   text-decoration: none;
   transition: 0.2s all;
+  font-weight: bold;
 
   &:focus {
     @include focus-style;
